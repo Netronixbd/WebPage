@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Antu Cable - Session Ended</title>
+<meta http-equiv="refresh" content="15; url=http://login.local/">
+<style>
+    /* Background and Base */
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(135deg, #1e3c72, #2a5298, #ee0979);
+        background-size: 400% 400%;
+        animation: bgMove 15s ease infinite;
+        color: #fff;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    /* Card container */
+    .card {
+        background: rgba(0,0,0,0.65);
+        border-radius: 25px;
+        padding: 50px 40px;
+        display: inline-block;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        animation: fadeIn 1.2s ease;
+        max-width: 550px;
+        border: 2px solid #ffd700;
+        position: relative;
+    }
+
+    /* Animated glowing title */
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #ffd700;
+        text-shadow: 0 0 15px #ffd700, 0 0 30px #ff6ec7;
+        animation: glow 2s ease-in-out infinite alternate;
+        margin-bottom: 10px;
+    }
+
+    /* Message title */
+    .msg-title {
+        font-size: 30px;
+        color: #ffffff;
+        text-shadow: 2px 2px #000;
+        animation: slideDown 1.5s ease;
+    }
+
+    /* Message text */
+    .msg-text {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #e5e5e5;
+        animation: fadeInUp 2s ease;
+    }
+
+    /* Recharge button */
+    .btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 35px;
+        background: linear-gradient(45deg, #ffd700, #ffae00);
+        color: #000;
+        font-size: 20px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background: #ffffff;
+        color: #e52e71;
+        transform: scale(1.08);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+
+    /* Contact info */
+    .contact {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #ffd700;
+        font-weight: bold;
+        animation: fadeIn 2.5s ease;
+    }
+
+    /* Thanks note */
+    .thanks {
+        margin-top: 35px;
+        font-size: 20px;
+        color: #00ffcc;
+        text-shadow: 1px 1px #000;
+        animation: fadeIn 3s ease;
+    }
+
+    /* Redirect note */
+    .redirect-note {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    /* Developer credit - small elegant */
+    .developer {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 12px;
+        color: #ffd700;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        background: rgba(0,0,0,0.3);
+        padding: 3px 8px;
+        border-radius: 12px;
+    }
+
+    /* Animations */
+    @keyframes bgMove {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+    @keyframes glow {
+        from { text-shadow: 0 0 15px #ffd700, 0 0 30px #ff6ec7; }
+        to { text-shadow: 0 0 25px #ffff00, 0 0 40px #ff00ff; }
+    }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    @keyframes fadeInUp { from {opacity: 0; transform: translateY(30px);} to {opacity: 1; transform: translateY(0);} }
+    @keyframes slideDown { from {opacity: 0; transform: translateY(-30px);} to {opacity: 1; transform: translateY(0);} }
+</style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">✨ Antu Cable ✨</div>
+        <div class="msg-title">⚡ ইন্টারনেট ব্যালেন্স শেষ ⚡</div>
+        <div class="msg-text">
+            আপনার হটস্পট ইন্টারনেটের ব্যালেন্স শেষ হয়ে গেছে।<br>
+            অনুগ্রহ করে নতুন রিচার্জ কিনে পুনরায় ইন্টারনেট উপভোগ করুন।
+        </div>
+        <a href="http://login.local/" class="btn">🔁 এখনই রিচার্জ করুন</a>
+        <div class="contact">
+            📞 সহায়তার জন্য যোগাযোগ করুন: <br>
+            +880 1912-654866
+        </div>
+        <div class="thanks">
+            🌸 ধন্যবাদ — Antu Cable এর সাথে থাকার জন্য! 💖
+        </div>
+        <div class="redirect-note">
+            ১৫ সেকেন্ড পরে স্বয়ংক্রিয়ভাবে লগইন পেইজে ফিরিয়ে নেয়া হবে...
+        </div>
+        <div class="developer">
+            Developed by Amir_Hosan (amirhosan1@outlook.com)
+        </div>
+    </div>
+</body>
+</html>

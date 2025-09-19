@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Antu Cable - Warning</title>
+<style>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #ee0979);
+    background-size: 400% 400%;
+    animation: bgMove 15s ease infinite;
+    color: #fff;
+    padding: 60px 20px;
+}
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.card {
+    background: rgba(0,0,0,0.65);
+    border-radius: 25px;
+    padding: 50px 40px;
+    display: inline-block;
+    max-width: 500px;
+    border: 2px solid #ffd700;
+}
+.title {
+    font-size: 40px;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+.msg-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ffd700, #ffae00);
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover { background: #fff; color: #e52e71; transform: scale(1.05); }
+</style>
+</head>
+<body>
+<div class="card">
+    <div class="title">⚡ সতর্কবার্তা ⚡</div>
+    <div class="msg-text">
+        আপনার হটস্পট ইন্টারনেটের ব্যালেন্স ১০ মিনিট পরে শেষ হবে।<br>
+        অনুগ্রহ করে recharge করুন যাতে সংযোগ না কেটে যায়।
+    </div>
+    <a href="http://login.local/" class="btn">🔁 এখনই Recharge করুন</a>
+</div>
+
+<script>
+// User session remaining time in milliseconds (example: 60 min total session)
+let totalSession = 60 * 60 * 1000; 
+let warningBefore = 10 * 60 * 1000; // 10 min
+
+setTimeout(function() {
+    alert("আপনার ইন্টারনেট ব্যালেন্স 10 মিনিট পরে শেষ হবে। অনুগ্রহ করে Recharge করুন!");
+}, totalSession - warningBefore);
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Antu Cable Hotspot Login</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<meta http-equiv="refresh" content="15;url=http://www.example.com">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #ee0979, #ff6ec7);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+/* Gradient background animation */
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Card container */
+.card {
+    background: rgba(0,0,0,0.7);
+    border-radius: 25px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    width: 420px;
+    position: relative;
+    border: 2px solid #ffd700;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.card { animation: fadeIn 1.5s ease; }
+
+/* Logo + WiFi icon */
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 15px #ffd700, 0 0 35px #ff6ec7;
+    margin-bottom: 15px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+.logo i { margin-left: 10px; }
+@keyframes glow {
+    from { text-shadow: 0 0 15px #ffd700, 0 0 35px #ff6ec7; }
+    to { text-shadow: 0 0 25px #ffff00, 0 0 45px #ff00ff; }
+}
+
+/* Welcome message */
+.welcome { font-size: 22px; margin-bottom: 25px; }
+
+/* Input fields */
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 14px 10px;
+    margin: 12px 0;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 50%;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffd700, #ffae00);
+    color: #000;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+input[type="submit"]:hover {
+    background: #ffffff;
+    color: #e52e71;
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* App icons */
+.apps {
+    margin-top: 25px;
+}
+.apps i {
+    font-size: 28px;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+.apps i:hover {
+    transform: scale(1.3);
+    color: #ffd700;
+}
+
+/* Contact info */
+.contact { margin-top: 20px; font-size: 16px; color: #ffd700; font-weight: bold; }
+
+/* Developer credit - small & elegant */
+.developer {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 11px;
+    color: #ffd700;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <div class="logo">✨ Antu Cable <i class="fa-solid fa-wifi"></i></div>
+    <div class="welcome">সন্মানিত গ্রাহক, লগইন করুন</div>
+    <form method="post" action="/login">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="🔑 লগইন করুন">
+    </form>
+    <div class="apps">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-edge"></i>
+    </div>
+    <div class="contact">
+        📞 Support: +880 1912-654866
+    </div>
+    <div class="developer">
+        Developed by Amir_Hosan (amirhosan1@outlook.com)
+    </div>
+</div>
+</body>
+</html>
